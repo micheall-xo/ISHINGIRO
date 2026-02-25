@@ -1,0 +1,46 @@
+{
+  "name": "ISHINGIRO",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "start": "npm run start:all",
+    "start:backend": "npm --prefix backend run dev",
+    "start:mobile": "npx expo start ./apps/mobile",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:mobile\"",
+    "install:all": "npm install && npm install --workspace=apps/mobile && cd backend && npm install"
+  },
+  "keywords": [],
+  "author": "GIHOZO MICHEAL ANGELO",
+  "license": "ISC",
+  "description": "School App that allows students to manage their school activities and manages examination",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "jest": "~29.7.0"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "^54.0.8",
+    "expo-notifications": "~0.32.10",
+    "expo-router": "^6.0.6",
+    "expo-secure-store": "~15.0.8",
+    "expo-status-bar": "~3.0.7",
+    "metro": "^0.83.1",
+    "mongodb": "^6.19.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.0",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-web": "~0.21.0"
+  }
+}

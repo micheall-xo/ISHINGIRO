@@ -1,0 +1,14 @@
+Starting project at D:\schoolapp-main\apps\mobile
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+The following packages should be updated for best compatibility with the installed expo version:
+  expo@54.0.8 - expected version: ~54.0.33
+  expo-notifications@0.32.11 - expected version: ~0.32.16
+  expo-router@6.0.6 - expected version: ~6.0.23
+  expo-status-bar@3.0.8 - expected version: ~3.0.9
+  react-native@0.81.4 - expected version: 0.81.5
+  react-native-reanimated@4.1.0 - expected version: ~4.1.1
+Your project may not work correctly until you install the expected versions of the packages.
+Waiting on http://localhost:8082
+Logs for your project will appear below.

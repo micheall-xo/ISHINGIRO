@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "ISHINGIRO",
+    "slug": "ISHINGIRO",
+    "scheme": "ISHINGIRO",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./apps/mobile/assets/icon.png",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "splash": {
+      "image": "./apps/mobile/assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "./apps/mobile/app"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./apps/mobile/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.micheallxo.ISHINGIRO"
+    },
+    "web": {
+      "favicon": "./apps/mobile/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a308cd27-35bc-44a9-b7cf-a5bfa9096d47"
+      }
+    }
+  }
+}
